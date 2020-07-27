@@ -1,0 +1,1 @@
+I'm following the directions in order, and they say to write what I've learned, but I'm still at the beginning of the project, so I guess I should come back at the end and fill this out better then.

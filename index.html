@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    
+<style>
+    
+    #logo {
+        display: block;
+        margin: 20% auto 20px auto;
+        width: 272px;
+    }
+
+    #search-bar-container {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        border: 1px solid lightgray;
+        border-radius: 30px;
+        width:fit-content;
+        padding: 1px 15px 1px 15px;
+    }
+    #search-bar {
+        width: 400px;
+        height: 40px;
+        margin: 0px;
+        border: none;
+    }
+    #mic-button {
+        background: transparent;
+        width: fit-content;
+        margin: 0px;
+        border: red;
+    }
+    #mic-img, #search-icon {
+        height: 20px;
+        margin: 0px;
+        align-self: center;
+    }
+
+    #button-container {
+        display:flex;
+        justify-content:center;
+    }
+    .submit-buttons {
+        height: 40px;
+        width: 130px;
+        border-color: transparent;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    
+ 
+</style>
+<body>
+<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" id="logo">
+
+<form>
+<div id="search-bar-container">
+    <img src="https://img.icons8.com/search" id="search-icon">
+    <input type="text" id="search-bar">
+    <button id="mic-button"><img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png" id="mic-img"></button>
+</div>
+    
+<div id="button-container">
+    <button id="search_button" class="submit-buttons">Google Search</button>
+    <button id="lucky-button" class="submit-buttons">I'm Feeling Lucky</button>
+</div>
+</form>
+</body>
+
+
+</html>

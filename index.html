@@ -3,6 +3,12 @@
     
 <style>
     
+    body{
+        color:rgba(0,0,0,.70);
+    }
+    a:link, a:visited {
+        color:rgba(0,0,0,.70);
+    }
     #logo {
         display: block;
         margin: 20% auto 20px auto;
@@ -28,12 +34,15 @@
         background: transparent;
         width: fit-content;
         margin: 0px;
-        border: red;
+        border: none;
     }
     #mic-img, #search-icon {
         height: 20px;
         margin: 0px;
         align-self: center;
+    }
+    #search-icon {
+        height: 15px;
     }
 
     #button-container {
@@ -46,11 +55,55 @@
         border-color: transparent;
         border-radius: 5px;
         margin: 10px;
+        color:rgba(0,0,0,.70);
+    }
+    #fake-apps-icon {
+        height: 20px;
+    }
+    #fake-profile-circle {
+        border-radius: 50%;
+        background: green;
+        height: 30px;
+        width: 30px;
+    }
+    a {
+        text-decoration: none;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    #right-nav-container, #left-nav-container {
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    .right-nav, .left-nav{
+        margin: 10px;
     }
     
  
 </style>
 <body>
+    <header>
+        <nav>
+            <div id="left-nav-container">
+                <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" class="left-nav">About</a>
+                <a href=https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" class="left-nav">Store</a>
+            </div>
+            <div id="right-nav-container">
+                <a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl" class="right-nav">Gmail</a>
+                <a href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl" class="right-nav">Images</a>
+                <a href="https://www.google.com/intl/en/about/products?tab=wh" class="right-nav"><img src="https://image.flaticon.com/icons/svg/847/847581.svg" id="fake-apps-icon"></a>
+                <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" class="right-nav"><div id="fake-profile-circle"></div></a>
+            </div>
+        </nav>
+    </header>
+
+
+<main>
 <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" id="logo">
 
 <form>
@@ -65,6 +118,8 @@
     <button id="lucky-button" class="submit-buttons">I'm Feeling Lucky</button>
 </div>
 </form>
+</main>    
+
 </body>
 
 

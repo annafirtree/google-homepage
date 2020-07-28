@@ -1,1 +1,7 @@
-I'm following the directions in order, and they say to write what I've learned, but I'm still at the beginning of the project, so I guess I should come back at the end and fill this out better then.
+I learned that the best format for a border is:
+border: 5px solid red;
+Merely setting border-width and border-color won't make a border appear. There HAS to be a style, too, so the condensed version is best.
+
+I suspect I need to do a better job of conceptually working out beforehand which things need classes and which need IDs.
+
+I'm a little surprised that the Odin Project didn't cover file managment yet (i.e. doing css in a separate file rather than in <style> tags in the same file).
